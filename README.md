@@ -2,7 +2,16 @@
 ![OS](https://img.shields.io/badge/OS-linux-0078D4)
 ![CPU](https://img.shields.io/badge/CPU-x86%2C%20x64%2C%20ARM%2C%20ARM64-FF8C00)
 ![language](https://img.shields.io/badge/language-Python-239120)
+# About
+`KnowPath` is a knowledge-enhanced large language model framework that effectively integrates both internal and external knowledge of LLMs to achieve superior knowledge-based question answering. Its notable advantages include:
 
+- `Reduced LLM invocations` (fewer API calls to LLMs)
+
+- `Lower token consumption` (decreased usage of tokens)
+
+- Capability to generate `fully directed connected knowledge subgraphs`
+
+The framework helps mitigate hallucination phenomena in LLM responses while significantly improving answer interpretability.
 # The pipeline of KnowPath
 
 ![image](Figs/workflow_00.png)
@@ -36,7 +45,7 @@
 
 # Get Start
 - ## 1.Deploy FreeBase locally
-    Here we would like to acknowledge [ToG](https://github.com/GasolSun36/ToG/tree/main/Freebase) for providing the FreeBase initialization method. They have offered a relatively comprehensive installation and startup procedure for FreeBase, so this step can be followed by referring to their provided process.
+    Here we would like to acknowledge [ToG](https://github.com/GasolSun36/ToG/tree/main/Freebase) for `providing the FreeBase initialization method`. They have offered a relatively comprehensive installation and startup procedure for FreeBase, so this step can be followed by referring to their provided process.
 
 - ## 2.Install the necessary pip packages
     Run the following command to install the required dependencies:
@@ -65,7 +74,7 @@ bash eval.sh
 cd knowpath
 python reason_path_visualize.py 
 ```
-Then you can get:
+Then you can get:smile::
 
 
 <img src="Figs/reasoning_paths.png" alt="subgraph1" width="49%">
@@ -74,7 +83,7 @@ Then you can get:
 
 # Result
 <div style="text-align: center">
-    <img src="Figs/result.png" alt="result" width="80%">
+    <img src="Figs/Result.png" alt="result" width="80%">
 </div>
 
 
