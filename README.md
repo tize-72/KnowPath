@@ -83,7 +83,7 @@ Then you can get:smile::
 
 # Result
 <div style="text-align: center">
-    <img src="Figs/Result.png" alt="result" width="80%">
+    <img src="Figs/result.png" alt="result" width="80%">
 </div>
 
 
