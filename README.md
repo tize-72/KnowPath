@@ -3,6 +3,9 @@
 ![CPU](https://img.shields.io/badge/CPU-x86%2C%20x64%2C%20ARM%2C%20ARM64-FF8C00)
 ![language](https://img.shields.io/badge/language-Python-239120)
 # About
+
+#### 《KnowPath: Knowledge-enhanced Reasoning via LLM-generated Inference Paths over Knowledge Graphs》
+
 `KnowPath` is a knowledge-enhanced large language model framework that effectively integrates both internal and external knowledge of LLMs to achieve superior knowledge-based question answering. Its notable advantages include:
 
 - `Reduced LLM invocations` (fewer API calls to LLMs)
