@@ -1,7 +1,12 @@
+<div style="text-align: center">
+    <img src=
+
 # KnowPath
+
 ![OS](https://img.shields.io/badge/OS-linux-0078D4)
 ![CPU](https://img.shields.io/badge/CPU-x86%2C%20x64%2C%20ARM%2C%20ARM64-FF8C00)
 ![language](https://img.shields.io/badge/language-Python-239120)
+
 # About
 
 #### 《KnowPath: Knowledge-enhanced Reasoning via LLM-generated Inference Paths over Knowledge Graphs》
@@ -15,11 +20,13 @@
 - Capability to generate `fully directed connected knowledge subgraphs`
 
 The framework helps mitigate hallucination phenomena in LLM responses while significantly improving answer interpretability.
+
 # The pipeline of KnowPath
 
-![image](Figs/workflow_00.png)
+![image](https://qizhao-ustc.oss-cn-hongkong.aliyuncs.com/img/workflow_00.png)
 
 # Project Structure
+
 ```
 ├── CoT
 │   ├── cot_io.py                   # COT method run file
@@ -47,16 +54,21 @@ The framework helps mitigate hallucination phenomena in LLM responses while sign
 ```
 
 # Get Start
+
 - ## 1.Deploy FreeBase locally
-    Here we would like to acknowledge [ToG](https://github.com/GasolSun36/ToG/tree/main/Freebase) for `providing the FreeBase initialization method`. They have offered a relatively comprehensive installation and startup procedure for FreeBase, so this step can be followed by referring to their provided process.
+
+  Here we would like to acknowledge [ToG](https://github.com/GasolSun36/ToG/tree/main/Freebase) for `providing the FreeBase initialization method`. They have offered a relatively comprehensive installation and startup procedure for FreeBase, so this step can be followed by referring to their provided process.
 
 - ## 2.Install the necessary pip packages
-    Run the following command to install the required dependencies:
-    ```
-    pip install -r requirements.txt
-    ```
+
+  Run the following command to install the required dependencies:
+
+  ```
+  pip install -r requirements.txt
+  ```
 
 # How to run KnowPath
+
 ```
 cd knowpath
 
@@ -67,30 +79,35 @@ python main.py --dataset cwq \ # choose one of the four datasets
                --random_seed 42 \ Random seed, default is 42
                --temperature_reasoning 0 \ Temperature for model inference, default is 0
 ```
+
 # How to eval
+
 ```
 cd eval
 bash eval.sh
 ```
+
 # Subgraph visualization
+
 ```
 cd knowpath
 python reason_path_visualize.py 
 ```
+
 Then you can get:smile::
 
 
-<img src="Figs/reasoning_paths.png" alt="subgraph1" width="49%">
-<img src="Figs/reasoning_paths1.png" alt="subgraph2" width="49%">
+<img src="https://qizhao-ustc.oss-cn-hongkong.aliyuncs.com/img/reasoning_paths.png" alt="subgraph1" width="49%">
+<img src="https://qizhao-ustc.oss-cn-hongkong.aliyuncs.com/img/reasoning_paths1.png" alt="subgraph2" width="49%">
 
 
 # Result
-<div style="text-align: center">
-    <img src="Figs/result.png" alt="result" width="80%">
-</div>
 
+![result](https://qizhao-ustc.oss-cn-hongkong.aliyuncs.com/img/result.png)
 
 # Case study
-<div style="text-align: center">
-    <img src="Figs/Case.png" alt="case" width="80%">
+
+![Case](https://qizhao-ustc.oss-cn-hongkong.aliyuncs.com/img/Case.png)
+
+"Figs/Case.png" alt="case" width="80%">
 </div>
