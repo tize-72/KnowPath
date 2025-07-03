@@ -570,7 +570,6 @@ def chain_rag(dataset_name: str, use_cache: bool = True, llm_type="qwen2.5:7b"):
         question_context_length = 0
         
         try:
-            print("进到这个try函数里了吗")
             # Build graph and plan for this question
             planner.clear_graph()
             planner.build_graph(context, text_id)
