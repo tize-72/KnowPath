@@ -9,7 +9,7 @@ from sentence_transformers import util
 from sentence_transformers import SentenceTransformer
 import copy
 
-SPARQLPATH = "http://localhost:8899/sparql"  # depend on your own internal address and port
+SPARQLPATH = "http://localhost:xxxx/sparql"  # depend on your own internal address and port
 
 # pre-defined sparqls
 sparql_head_relations = """\nPREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT ?relation\nWHERE {\n  ns:%s ?relation ?x .\n}"""

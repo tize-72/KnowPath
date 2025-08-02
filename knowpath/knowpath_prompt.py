@@ -23,7 +23,7 @@ Dict : {
 "Topic enetity" : $topicEntity,
 }
 RelationList: $relationList\n
-Now you need to find out up to 7 most relevant relations from RelationList to each entry in the dictionary Dict and put them into a list called Relations. The answer format is: {"Relations":[xxx, xxx, xxx,...] (length up to 5)}. Do not output any extra content except what is required by the format. \n
+Now you need to find out a few most relevant relations from RelationList to each entry in the dictionary Dict and put them into a list called Relations. The answer format is: {"Relations":[xxx, xxx, xxx,...] }. Do not output any extra content except what is required by the format. \n
 
 Answer:\n
 """
@@ -35,7 +35,7 @@ Dict : {
 "Knowledge Path" : $knowpath_str,
 }
 RelationList: $relationList\n
-Now you need to find out up to 7 most relevant relations from RelationList to each entry in the dictionary Dict and put them into a list called Relations. The answer format is: {"Relations":[xxx, xxx, xxx,...] (length up to 5)}. Do not output any extra content except what is required by the format. \n
+Now you need to find out a few most relevant relations from RelationList to each entry in the dictionary Dict and put them into a list called Relations. The answer format is: {"Relations":[xxx, xxx, xxx,...] }. Do not output any extra content except what is required by the format. \n
 
 Answer:\n
 """
@@ -50,7 +50,7 @@ Dict : {
 "RelationList" : $relationList,
 }
 EntityList: $entityList\n
-Now you need to find out up to 7 entities that are most relevant to each entry in the dictionary Dict from EntityList by relevance, and put them into a list called Entities. The answer format is: {"Entities":[xxx, xxx, xxx,...] (length up to 5)}. Do not output any extra content except what is required by the format. \n
+Now you need to find out a few entities that are most relevant to each entry in the dictionary Dict from EntityList by relevance, and put them into a list called Entities. The answer format is: {"Entities":[xxx, xxx, xxx,...] (length up to 5)}. Do not output any extra content except what is required by the format. \n
 Answer:\n
 """
 
@@ -63,7 +63,7 @@ Dict : {
 "RelationList" : $relationList,
 }
 EntityList: $entityList\n
-Now you need to find out up to 7 entities that are most relevant to each entry in the dictionary Dict from EntityList by relevance, and put them into a list called Entities. The answer format is: {"Entities":[xxx, xxx, xxx,...] (length up to 5)}. Do not output any extra content except what is required by the format. \n
+Now you need to find out a few entities that are most relevant to each entry in the dictionary Dict from EntityList by relevance, and put them into a list called Entities. The answer format is: {"Entities":[xxx, xxx, xxx,...] (length up to 5)}. Do not output any extra content except what is required by the format. \n
 
 Answer:\n
 """
@@ -90,9 +90,6 @@ cot_prompt = """
 
 Q: What state is home to the university that is represented in sports by George Washington Colonials men's basketball?
 A: First, the education institution has a sports team named George Washington Colonials men's basketball in is George Washington University , Second, George Washington University is in Washington D.C. The answer is {Washington, D.C.}.
-
-Q: Who lists Pramatha Chaudhuri as an influence and wrote Jana Gana Mana?
-A: First, Bharoto Bhagyo Bidhata wrote Jana Gana Mana. Second, Bharoto Bhagyo Bidhata lists Pramatha Chaudhuri as an influence. The answer is {Bharoto Bhagyo Bidhata}.
 
 Q: Who was the artist nominated for an award for You Drive Me Crazy?
 A: First, the artist nominated for an award for You Drive Me Crazy is Britney Spears. The answer is {Jason Allen Alexander}.

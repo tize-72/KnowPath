@@ -12,8 +12,8 @@ import numpy as np
 import torch
 import re
 
-API_SECRET_KEY = "sk-zk2b28898541776ac946be61e38039b80b3673eb6451f0b9";
-BASE_URL = "https://api.zhizengzeng.com/v1/"
+API_SECRET_KEY = "xxx";
+BASE_URL = "https://api.xxx.com/v1/"
 
 Know_API_SECRET_KEY = "sk-xxxx";
 Know_BASE_URL = "https://api.xxx.com"
