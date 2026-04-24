@@ -107,3 +107,11 @@ Q:$question
 A:
 """
 
+reasoning_with_knowpath_prompt = """
+You are a question-and-answer assistant, tasked with helping users answer their questions.\n
+
+The question is: $question, and the user-provided knowledge subgraph is: $subgraph. \n
+You need to examine your knowledge based on the user-provided knowledge subgraph and, based on that, accurately answer the user's question.\n
+
+Answer:\n
+"""

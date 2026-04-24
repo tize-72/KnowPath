@@ -374,3 +374,37 @@ def get_result_templete():
 
 
     return result
+
+
+class LLM_generate(object):
+    
+    def __init__(self, model, args):
+        self.history = []
+        self.mapping = {
+            "qwen2.5" : 'xxxxx',
+            'deepseek-chat' : 'xxxxx',
+            'deepseek-ai/DeepSeek-V3' : 'xx',
+            "qwen3" : 'xxx',
+        }
+        self.model = model
+        self.base_url = self.mapping[self.model]
+        self.api_key = 'sk-xxxxx'
+        self.api_key_flu = 'sk-xxx'
+        self.client = openai.Client(base_url=self.base_url, api_key=self.api_key_flu)
+
+    def chat(self, content, json_schema=None):
+        message_prompt = [{"role":"user","content":content}]
+        self.history = self.history + message_prompt
+        response = self.client.chat.completions.create(
+            model=self.model,
+            messages=self.history,
+            temperature=0.6,
+            max_tokens=8096,
+        )
+        answer = response.choices[0].message.content
+        token_num = {"total": response.usage.total_tokens, 
+                     "input": response.usage.prompt_tokens, 
+                     "output": response.usage.completion_tokens}
+        print(answer)
+
+        return answer, token_num

@@ -566,3 +566,28 @@ def half_stop(question, cluster_chain_of_entities, depth, args):
     save_2_jsonl(question, answer, cluster_chain_of_entities, file_name=args.dataset, llm_type=args.LLM_type)
 
 
+def reasoning_with_knowpath(question, result_group, result_dict, args):
+    """Perform reasoning with KnowPath.
+
+    Args:
+        question (_type_): The input question.
+        result_group (_type_): The explored subgraph results.
+        result_dict (_type_): A dictionary storing the reasoning results.
+        args (_type_): All runtime arguments.
+    """
+    # Here we may need to determine whether the current entity is a topic entity
+    prompt = Template(reasoning_with_knowpath_prompt).substitute(
+        question=question,
+        subgraph=result_group
+    )
+
+    client = LLM_generate(args.LLM_type, args)
+    response, token_num = client.chat(prompt)
+
+    result_dict["call_num"] += 1
+    result_dict["token_num"]["total"] += token_num["total"]
+    result_dict["token_num"]["input"] += token_num["input"]
+    result_dict["token_num"]["output"] += token_num["output"]
+    result_dict["callback"] = True
+
+    return response, result_dict

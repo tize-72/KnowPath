@@ -9,7 +9,7 @@
 
 # About
 
-#### 《KnowPath: Knowledge-enhanced Reasoning via LLM-generated Inference Paths over Knowledge Graphs》
+#### 《KnowPath: Leveraging Large Language Model Prior Reasoning Paths for Dynamic Self-Reflective Reasoning via Knowledge Graph》
 
 `KnowPath` is a knowledge-enhanced large language model framework that effectively integrates both internal and external knowledge of LLMs to achieve superior knowledge-based question answering. Its notable advantages include:
 
@@ -23,7 +23,7 @@ The framework helps mitigate hallucination phenomena in LLM responses while sign
 
 # The pipeline of KnowPath
 
-![image](https://qizhao-ustc.oss-cn-hongkong.aliyuncs.com/img/workflow_00.png)
+![image](./Figs/workflow.png)
 
 # Project Structure
 
@@ -97,17 +97,7 @@ python reason_path_visualize.py
 Then you can get:smile::
 
 
-<img src="https://qizhao-ustc.oss-cn-hongkong.aliyuncs.com/img/reasoning_paths.png" alt="subgraph1" width="49%">
-<img src="https://qizhao-ustc.oss-cn-hongkong.aliyuncs.com/img/reasoning_paths1.png" alt="subgraph2" width="49%">
+![image](./Figs/reasoning_paths.png)
 
 
-# Result
-
-![result](https://qizhao-ustc.oss-cn-hongkong.aliyuncs.com/img/result.png)
-
-# Case study
-
-![Case](https://qizhao-ustc.oss-cn-hongkong.aliyuncs.com/img/Case.png)
-
-"Figs/Case.png" alt="case" width="80%">
-</div>
+![image](./Figs/reasoning_paths1.png)
